@@ -1,15 +1,10 @@
 # cv
+Install Node.js, Git, Msys
 
 ```
 #### pacman -S mingw-w64-ucrt-x86_64-gcc --noconfirm
 
-#### pacman -S vim tmux unzip --noconfirm
-
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-nvm install node
-npm install next@latest react@latest react-dom@latest
+#### pacman -S tmux --noconfirm
 
 #### pacman -S mingw-w64-ucrt-x86_64-python mingw-w64-ucrt-x86_64-python-numpy mingw-w64-ucrt-x86_64-python-opencv --noconfirm
 ```
