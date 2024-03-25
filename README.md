@@ -3,7 +3,7 @@
 ```
 #### pacman -S mingw-w64-ucrt-x86_64-gcc --noconfirm
 
-#### pacman -S vim git tmux unzip --noconfirm
+#### pacman -S vim tmux unzip --noconfirm
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -24,7 +24,7 @@ set noswapfile
 call plug#begin('~/.vim/plugged')
 
 let mapleader = ","
-nmap <leader>nn :NERDTree<cr>
+nmap <leader>n :NERDTreeToggle<CR>
 
 Plug 'scrooloose/nerdtree'
 autocmd vimenter * NERDTree
@@ -74,6 +74,9 @@ colorscheme desert
 filetype indent on
 ```
 # Tmux
+cp /c/msys64/usr/bin/tmux.exe /c/Program\ Files/Git/usr/bin
+cp /c/msys64/usr/bin/msys-event* /c/Program\ Files/Git/usr/bin
+
 `vim  ~/.tmux.conf`
 
 ```
